@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Villa Moderna PRO — Edición Final</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loading">
+  <div class="loading-box">
+    <div class="loading-icon">🏡</div>
+    <h1>Villa Moderna</h1>
+    <p>Preparando la casa...</p>
+    <div class="progress"><div id="loadingProgress"></div></div>
+  </div>
+</div>
+
+<div id="ui">
+  <div class="panel">
+    <div class="logo">🏡<div><strong>Villa Moderna</strong><span>Edición Final 3D</span></div></div>
+    <div class="linea"></div>
+
+    <div class="seccion">
+      <h3>🌎 Exterior</h3>
+      <div class="botones">
+        <button id="btnExterior">🌎 Exterior</button>
+        <button id="btnFrontal">🏠 Frente</button>
+        <button id="btnPatio">🌴 Patio</button>
+        <button id="btnPiscina">🏊 Piscina</button>
+        <button id="btnParqueadero">🅿️ Parqueadero</button>
+        <button id="btnGato">🐈 Buscar al gato</button>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h3>🚪 Interior</h3>
+      <div class="botones">
+        <button id="btnEntrar" class="principal">🚪 Entrar a la casa</button>
+        <button id="btnSalir">🚶 Salir</button>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h3>🏠 Primer piso</h3>
+      <div class="botones">
+        <button id="btnSala">🛋️ Sala</button>
+        <button id="btnComedor">🍽️ Comedor</button>
+        <button id="btnCocina">🍳 Cocina</button>
+        <button id="btnEstudio">💻 Estudio</button>
+        <button id="btnOratorio">✝️ Oración</button>
+        <button id="btnBanoSocial">🚻 Baño social</button>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h3>⬆️ Segundo piso</h3>
+      <div class="botones">
+        <button id="btnSegundoPiso">⬆️ Subir</button>
+        <button id="btnPrincipal">🛌 Habitación principal</button>
+        <button id="btnBanoPrincipal">🛁 Baño principal</button>
+        <button id="btnHabitacion1">🚗 Cuarto del niño</button>
+        <button id="btnHabitacion2">🎀 Cuarto de la niña</button>
+      </div>
+    </div>
+
+    <div class="linea"></div>
+
+    <div class="controles">
+      <strong>🎮 CONTROLES</strong>
+      <p><b>W A S D</b> — Caminar</p>
+      <p><b>SHIFT</b> — Correr</p>
+      <p>🖱️ — Mirar</p>
+      <p><b>ESC</b> — Liberar mouse</p>
+    </div>
+  </div>
+
+  <div id="estado">🌎 Vista exterior</div>
+
+  <div id="ayuda">
+    <strong>🚶 Modo exploración</strong>
+    <span>Haz clic sobre la escena para mirar</span>
+  </div>
+
+  <div class="titulo"><span>VILLA MODERNA</span><small>CASA DE DOS PISOS</small></div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
